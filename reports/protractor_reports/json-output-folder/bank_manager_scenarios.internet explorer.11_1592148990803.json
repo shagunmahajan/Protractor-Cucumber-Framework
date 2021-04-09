@@ -1,0 +1,513 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Bank Manager Scenarios",
+    "line": 1,
+    "id": "bank-manager-scenarios",
+    "tags": [],
+    "uri": "resource\\feature\\bankManager.feature",
+    "elements": [
+      {
+        "id": "bank-manager-scenarios;verify-user-is-able-to-create-customer-with-bank-manager-login-and-add-accounts-with-different-currency",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Verify user is able to create customer with Bank manager login and add accounts with different currency",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "workspace\\ProtractorCucumberAssignment\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2261000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "User sees \"XYZ Bank\" header",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 477000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User clicks on \"Bank Manager Login\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2473000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User clicks on \"Add Customer\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1361000000,
+              "error_message": "NoSuchElementError: No element found using locator: by.partialButtonText(\"Add Customer\")\n    at C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at helper.clickButton (C:\\Users\\shagun01\\Desktop\\NAGP workspace\\ProtractorCucumberAssignment\\resource\\pageFunction\\pageFunc.js:66:28)\n    at World.<anonymous> (C:\\Users\\shagun01\\Desktop\\NAGP workspace\\ProtractorCucumberAssignment\\resource\\feature\\specifications\\bankManagerSteps.js:16:24)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User provides \"user1\" in \"First Name\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User provides \"last\" in \"Last Name\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User provides \"20002\" in \"Post Code\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User clicks on \"Add Customer Submit\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "User verifies the customer is added",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User clicks on \"Open Account\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User select \"user1\" in customer dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:41"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User select \"Dollar\" in currency dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:45"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "User clicks on \"Process\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "User verifies the account is created",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:34"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "User select \"user1\" in customer dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:41"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "User select \"Rupee\" in currency dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:45"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "User clicks on \"Process\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "User verifies the account is created",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:34"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "User select \"user1\" in customer dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:41"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "User select \"Pound\" in currency dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:45"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "User clicks on \"Process\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "User verifies the account is created",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:34"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "workspace\\ProtractorCucumberAssignment\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47000000
+            },
+            "embeddings": [
+              {
+                "data": "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",
+                "mime_type": "image/png"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "bank-manager-scenarios;verify-user-is-able-to-delete-customer",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "Verify user is able to delete customer",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "workspace\\ProtractorCucumberAssignment\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1010000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "User sees \"XYZ Bank\" header",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "User clicks on \"Bank Manager Login\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1796000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "User clicks on \"Add Customer\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1322000000,
+              "error_message": "NoSuchElementError: No element found using locator: by.partialButtonText(\"Add Customer\")\n    at C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\shagun01\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at helper.clickButton (C:\\Users\\shagun01\\Desktop\\NAGP workspace\\ProtractorCucumberAssignment\\resource\\pageFunction\\pageFunc.js:66:28)\n    at World.<anonymous> (C:\\Users\\shagun01\\Desktop\\NAGP workspace\\ProtractorCucumberAssignment\\resource\\feature\\specifications\\bankManagerSteps.js:16:24)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "User provides \"user2\" in \"First Name\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "User provides \"last\" in \"Last Name\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "User provides \"20002\" in \"Post Code\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "User clicks on \"Add Customer Submit\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "User verifies the customer is added",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "User clicks on \"Customers\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "User provides \"user2\" in \"Search Customer\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "User try to delete created \"user2\" customer",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:49"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "workspace\\ProtractorCucumberAssignment\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37000000
+            },
+            "embeddings": [
+              {
+                "data": "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",
+                "mime_type": "image/png"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "internet explorer",
+        "version": "11"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

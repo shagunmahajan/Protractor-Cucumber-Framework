@@ -1,0 +1,95 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "launch application",
+    "line": 1,
+    "id": "launch-application",
+    "tags": [],
+    "uri": "feature\\spec.feature",
+    "elements": [
+      {
+        "id": "launch-application;launch-app",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Launch app",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user launch browser",
+            "match": {
+              "location": "feature\\specifications\\spec.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2060000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User clicks on \"Bank Manager Login\" button",
+            "match": {
+              "location": "feature\\specifications\\spec.js:18"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "TypeError: Cannot read property 'eventually' of undefined\n    at World.<anonymous> (C:\\Users\\shagun01\\Desktop\\NAGP workspace\\ProtractorCucumberAssignment\\feature\\specifications\\spec.js:24:22)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User clicks on \"Customers\" button",
+            "match": {
+              "location": "feature\\specifications\\spec.js:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User sees \"XYZ Bank\" header",
+            "match": {
+              "location": "feature\\specifications\\spec.js:43"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "internet explorer",
+        "version": "11"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

@@ -1,0 +1,525 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Bank Manager Scenarios",
+    "line": 1,
+    "id": "bank-manager-scenarios",
+    "tags": [],
+    "uri": "resource\\feature\\bankManager.feature",
+    "elements": [
+      {
+        "id": "bank-manager-scenarios;verify-user-is-able-to-create-customer-with-bank-manager-login-and-add-accounts-with-different-currency",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Verify user is able to create customer with Bank manager login and add accounts with different currency",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "workspace\\ProtractorCucumberAssignment\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3593000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "User sees \"XYZ Bank\" header",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 290000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User clicks on \"Bank Manager Login\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1094000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User clicks on \"Add Customer\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User provides \"user1\" in \"First Name\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User provides \"last\" in \"Last Name\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 159000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User provides \"20002\" in \"Post Code\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User clicks on \"Add Customer Submit\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1125000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "User verifies the customer is added",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2015000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User clicks on \"Open Account\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1116000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User select \"user1\" in customer dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User select \"Dollar\" in currency dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "User clicks on \"Process\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1092000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "User verifies the account is created",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2014000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "User select \"user1\" in customer dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "User select \"Rupee\" in currency dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "User clicks on \"Process\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1086000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "User verifies the account is created",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2018000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "User select \"user1\" in customer dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "User select \"Pound\" in currency dropdown",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "User clicks on \"Process\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1072000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "User verifies the account is created",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2014000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "workspace\\ProtractorCucumberAssignment\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "bank-manager-scenarios;verify-user-is-able-to-delete-customer",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "Verify user is able to delete customer",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "workspace\\ProtractorCucumberAssignment\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 757000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "User sees \"XYZ Bank\" header",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "User clicks on \"Bank Manager Login\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1147000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "User clicks on \"Add Customer\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1131000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "User provides \"user2\" in \"First Name\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "User provides \"last\" in \"Last Name\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "User provides \"20002\" in \"Post Code\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 177000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "User clicks on \"Add Customer Submit\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "User verifies the customer is added",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2013000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "User clicks on \"Customers\" button",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "User provides \"user2\" in \"Search Customer\" field",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 367000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "User try to delete created \"user2\" customer",
+            "match": {
+              "location": "resource\\feature\\specifications\\bankManagerSteps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "workspace\\ProtractorCucumberAssignment\\node_modules\\cucumber\\lib\\support_code_library_builder\\index.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "83.0.4103.97"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]
