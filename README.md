@@ -27,7 +27,7 @@ This is Test Automation framework designed using Protractor, Cucumber and Javasc
 ├───reports                            # This folder contains test result (includes html report, screenshots)
 ├───resource
 │   ├───common                         # This folder contains file with all the web elements identified using different locators 
-│   ├──feature                         # This folder contains feature files, step definition files and page function files
+│   ├───feature                         # This folder contains feature files, step definition files and page function files
 │   │   ├───specifications             # This folder contains test step definition files as per feature and hook file
 │   │   │   ├───<feature1StepFile>.js
 │   │   │   ├───<feature2StepFile>.js
