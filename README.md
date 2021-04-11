@@ -1,50 +1,80 @@
-Framework is created using cucumber and protractor, cucumber-html-reporter' is used for reporting, chai-as-promised is used for assertions
+﻿# Protractor, Cucumber and Javascript Setup Guide
+This is Test Automation framework designed using Protractor, Cucumber and Javascript
 
-To start execution follow below commands
-to install dependencies
-npm install
+## Table of Contents
 
-Update the webdriver first
-webdriver-manager update
+- [Features/Project Description](#features-project-description)
+- [Framework Structure](#framework-structure)
+- [Pre-requisites](#pre-requisites)
+- [Setup Scripts](#setup-scripts)
+- [How to Write Test](#how-to-write-test)
+- [How to Run Test](#how-to-run-test)
+- [Troubleshooting](#troubleshooting)
+- [How to Update local npm packages](#how-to-update-local-npm-packages)
+- [Sample Test Results](#sample-test-results)
 
-Start the webdriver
-webdriver-manager start
+#### Features/Project Description:
+* This automation framework is designed using Protractor and Cucumber.
+* JavaScript is used as a programming language.
+* Reporting is implemented using cucumber-html-reporter npm module. This generates the report in html. Also it captures the screenshots of the failed test cases.
+* Test case scripts are in the `./resource/feature` directory.
+* Page elements are in `./resource/common` directory. 
+* Test step definitions are in `./resource/feature/specifications` directory. 
+* Page functions are in `./resource/pageFunction` directory. 
 
-execute test scenarios
-protractor config.js
+#### Framework Structure
+```
+├───reports                            # This folder contains test result (includes html report, screenshots)
+├───resource
+│   ├───common                         # This folder contains file with all the web elements identified using different locators 
+│   ├──feature                         # This folder contains feature files, step definition files and page function files
+│   │   ├───specifications             # This folder contains test step definition files as per feature and hook file
+│   │   │   ├───<feature1StepFile>.js
+│   │   │   ├───<feature2StepFile>.js
+│   │   │   └───hook.js                # This file contains hook functions, e.g. before and after functions
+│   │   ├───<featureFile1>.feature 
+│   │   └───<featureFile2>.feature
+│   └───pageFunction                   # This folder contains function files
+├───test.properties                    # This file contains test data
+└───config.js                          # This file contains framework configuration
+```
 
-To execute parallel execution on multiple browsers, multiCapabilities code can be uncommented
-And to generate single report for multiple browsers, uncomment Multiple Cucumber HTML Reporter plugin code in config.js
+## To Get Started
 
-Automation code
-resource folder contains all the code including feature files, pagefunction files, common function , hook file, step definition files
+#### Pre-requisites
+* Download and install Chrome or Firefox browser.
+* Download and install Node.js:
+  > [Install Node.JS](https://nodejs.org/en/download/ "Install Node.JS").
+* Run `node -v` and make sure your node version is 6.x.x or greater.
+* Run `java -version` and make sure you have Java Development Kit (JDK) installed. 
+* Optional - Download and install any Text Editor like Visual Code/ Eclipse/ WebStorm/ IntelliJ.
+  * [Install Visual Studio Code](https://code.visualstudio.com/download/ "Install Visual Studio Code").
+  * [Install Eclipse](https://www.eclipse.org/downloads/packages/release/2021-03/r/eclipse-ide-enterprise-java-and-web-developers/ "Install Eclipse").
 
-There are 2 feature files
-BankManager. feature - It contains test cases related to BankManager login, creating new customer, opening an account for newly created customer and deleting a customer
-Customer.feature - It contains test cases related to Customer login, To deposit an amount to created accounts, to withdraw amount from accounts and to check the transactions related to accounts
+#### Setup Scripts 
+* Clone the repository into a folder.
+* Install Protractor: `npm install -g protractor`.
+* Update necessary binaries of webdriver-manager: `webdriver-manager update` or `npm install -g webdriver-manager`.
+* Go to Project root directory and run `npm install` to install the project dependencies from package.json.
+* In a separate command line window, run `webdriver-manager start` and keep it running.
 
-There are 2 step files
-customerSteps.js - contains test steps related to customer feature file
-bankManagerSteps.js - contains test steps related to bankManager feature file and few common steps for both bankManager and customer feature files
+#### How to Write Test
+* Add new spec under feature folder.
+* Name the file as <testCaseName>.feature (e.g. bankManager.feature).
+* Create a file under specifications folder as <pageName>.js (e.g. bankManagerSteps.js) to add step definition.
+* Add functions under pageFunction folder.
 
-hook.js - hook file contains before and after function that executes before and after every scenario
-After function captures screenshot for every failed scenario
-Note - hook.js is in specifications folder as it works properly when created in the same folder having step definition 
+#### How to Run Test
+* `npm test` or `npm run test` - Run complete Test Suite. 
 
-Page function-
-It has only One file pageFunc.js that contains all functions implemented to verify the different steps
+### How to Update local npm packages
+* Go to Project root directory and run command: `npm update`
 
-Common folder
-It has webelements.js file that contains all the web elements identified using different locators
+#### Troubleshooting
+* run `node -v` and make sure your node version is 14.15.4 or greater
+* run `java -version` and make sure you have Java Development Kit (JDK) installed. 
+* Make sure you have a local instance of Selenium Server started.
+* run `webdriver-manager update` to make sure you have the latest Selenium webdrivers. 
 
-Test.properties 
-this file contains baseurl and default time out variable that can be used in different files
-
-Note- extra sleep time is added at few places to make the code work as the applicaiton is bit unstable and the elements are not getting loaded on time
-Also transactions are not getting added/displayed properly intermittently. Please try to execute the script again if not loaded 
-
-Note- delete created customer has been added with different set of user, and in Customer.feature file. due to execution time and application issues, user is not getting displayed intermittently
-For table related functions, element is identified in the function itself to avoid getting any kind of exception due to application late response
-
-Note- screenshot will not be added for Multiple Cucumber HTML Reporter
-Archive code is still in progress, for the workaround, currently have created separate folder for each report with execution time.
+#### Sample Test Results
+![Protractor, Cucumber and Javascript Test Results](./testReport.png?raw=true "Protractor, Cucumber and Javascript Test Results")
